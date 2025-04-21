@@ -4,6 +4,11 @@ This guide provides instructions for setting up GitLab and GitLab Runner in a Do
 
 ## Getting Started with GitLab
 
+### Start the gitlab container
+```bash
+docker compose up -d
+```
+
 ### Retrieve GitLab Root Password
 After installing GitLab, retrieve the initial root password:
 ```bash
