@@ -3,7 +3,6 @@ services:
     image: gitlab/gitlab-ce:latest
     container_name: gitlab
     restart: always
-    hostname: 'gitlab.example.com'
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         # Add any other gitlab.rb configuration here, each on its own line
@@ -17,3 +16,9 @@ services:
       - '/mnt/media/gitlab/logs:/var/log/gitlab'
       - '/mnt/media//gitlab/data:/var/opt/gitlab'
     shm_size: '512m'
+    networks:
+      - gitlab-network
+
+networks:
+  gitlab-network:
+    external: true
