@@ -7,3 +7,4 @@
 05. gitlab-runner-with-docker-executor-dind
 04. gitlab-runner-with-docker-executor-socket-binding
 ./README.md
+02. gitlab-in-docker-compose/gitlab
